@@ -74,7 +74,7 @@ export const stats: Stat[] = [
       "Since 2024 I've been the only engineer on two live product lines at Codesstream — architecture, features, security and deployment all run through one pair of hands.",
   },
   {
-    value: "6",
+    value: "7",
     label: "Live production sites",
     story:
       "Every project on this page links to a real deployed system with real users — including an international client in Switzerland. No mockups, no concepts.",
@@ -194,6 +194,17 @@ export const projects: Project[] = [
     image: "/images/projects/pinkvelvet.png",
   },
   {
+    id: "icscertify",
+    name: "ICS Certify",
+    description: "Corporate site for the ICS certificate platform — the public face of CVMS.",
+    tags: ["B2B platform", "Brand site", "Verification"],
+    href: "https://icscertify.com",
+    domain: "icscertify.com",
+    year: "2024",
+    role: "Design & build",
+    image: "/images/projects/icscertify.png",
+  },
+  {
     id: "tecdex",
     name: "Tecdex",
     description: "Cybersecurity & IT services business site.",
@@ -231,10 +242,10 @@ export const projects: Project[] = [
     name: "MY-BUS",
     description: "QR-based bus pass & booking system with PayPal IPG integration.",
     tags: ["PHP", "MySQL", "QR systems", "PayPal IPG"],
-    href: "https://my-bus-zeta.vercel.app",
-    domain: "my-bus-zeta.vercel.app",
+    href: "https://github.com/Bakeer27/MY-BUS",
+    domain: "github.com/Bakeer27/MY-BUS",
     year: "2023",
-    role: "Final-year project",
+    role: "Final-year project — source",
   },
 ];
 

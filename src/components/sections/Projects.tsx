@@ -79,7 +79,7 @@ export default function Projects() {
         <div className="flex flex-wrap items-end justify-between gap-8">
           <SectionHeading eyebrow="03 — Selected work" word="Shipped" />
           <p data-reveal className="type-label gsap-reveal max-w-xs pb-2">
-            Every card opens the real, live site
+            Real shipped work — cards open the live product
           </p>
         </div>
 
