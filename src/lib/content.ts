@@ -246,6 +246,7 @@ export const projects: Project[] = [
     domain: "github.com/Bakeer27/MY-BUS",
     year: "2023",
     role: "Final-year project — source",
+    image: "/images/projects/mybus.png",
   },
 ];
 
