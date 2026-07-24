@@ -14,7 +14,7 @@ export const site = {
   coordinates: { lat: "6.9271° N", lng: "79.8612° E" },
   timezone: "Asia/Colombo",
   github: "https://github.com/Bakeer27",
-  linkedin: "https://www.linkedin.com/in/bakeer-ahamed-20b412340/",
+  linkedin: "https://www.linkedin.com/in/bakeer-ahamed-84b175173",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://bakeerahamed.dev",
   availability: "Open to remote roles & contract work",
 } as const;
@@ -74,10 +74,10 @@ export const stats: Stat[] = [
       "Since 2024 I've been the only engineer on two live product lines at Codesstream — architecture, features, security and deployment all run through one pair of hands.",
   },
   {
-    value: "7",
+    value: "6",
     label: "Live production sites",
     story:
-      "Every project on this page links to a real deployed system with real users — including an international client in Switzerland. No mockups, no concepts.",
+      "Six of the projects on this page link to a real deployed system with real users. MY-BUS links to source, not a live deployment.",
   },
 ];
 
@@ -114,7 +114,7 @@ export const caseStudies: CaseStudy[] = [
     stack: ["Laravel", "Livewire", "PHP", "MySQL", "Tailwind CSS"],
     links: [
       { label: "Public verification portal", href: "https://new.icscertify.com/verify" },
-      { label: "Client portal", href: "https://new.icscertify.com/client/login" },
+      { label: "Client portal (demo login)", href: "https://new.icscertify.com/client/login" },
     ],
     chapters: {
       context:
@@ -166,7 +166,7 @@ export const caseStudies: CaseStudy[] = [
 ];
 
 /* ------------------------------------------------------------------ */
-/*  PROJECTS GRID — every link is a real live site                    */
+/*  PROJECTS GRID — live sites, except MY-BUS which links to source   */
 /* ------------------------------------------------------------------ */
 
 export interface Project {
@@ -179,6 +179,8 @@ export interface Project {
   year: string;
   role: string;
   image?: string;
+  /** Card links to source code instead of a live deployment. */
+  sourceOnly?: boolean;
 }
 
 export const projects: Project[] = [
@@ -247,6 +249,7 @@ export const projects: Project[] = [
     year: "2023",
     role: "Final-year project — source",
     image: "/images/projects/mybus.png",
+    sourceOnly: true,
   },
 ];
 

@@ -24,7 +24,7 @@ function BrowserFrame({ project }: { project: Project }) {
         {project.image ? (
           <Image
             src={project.image}
-            alt={`${project.name} — live site`}
+            alt={`${project.name} — ${project.sourceOnly ? "source code" : "live site"}`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.04]"
@@ -36,6 +36,11 @@ function BrowserFrame({ project }: { project: Project }) {
             </span>
           </div>
         )}
+
+        {/* hover badge — makes the link destination explicit */}
+        <span className="pointer-events-none absolute bottom-3 right-3 rounded-full border border-line-strong bg-ink/80 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-gold opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
+          {project.sourceOnly ? "View source →" : "View live →"}
+        </span>
       </div>
     </div>
   );
@@ -79,7 +84,7 @@ export default function Projects() {
         <div className="flex flex-wrap items-end justify-between gap-8">
           <SectionHeading eyebrow="03 — Selected work" word="Shipped" />
           <p data-reveal className="type-label gsap-reveal max-w-xs pb-2">
-            Real shipped work — cards open the live product
+            Real shipped work — cards open the live product, or the source
           </p>
         </div>
 
