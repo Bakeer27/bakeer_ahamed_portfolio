@@ -188,6 +188,15 @@ html.lenis body {
   border: 1px solid var(--line);
 }
 
+/* ambient aurora field — soft radial gradients, no blur filter (blur on
+   viewport-sized layers is expensive; the gradient falloff is free) */
+.aurora-blob {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
 /* faint blueprint grid for section backdrops */
 .blueprint {
   background-image:

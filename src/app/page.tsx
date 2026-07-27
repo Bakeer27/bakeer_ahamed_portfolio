@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Cursor from "@/components/layout/Cursor";
 import Hud from "@/components/layout/Hud";
+import AuroraBackground from "@/components/layout/AuroraBackground";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Impact from "@/components/sections/Impact";
@@ -16,6 +17,7 @@ import { caseStudies } from "@/lib/content";
 export default function Page() {
   return (
     <>
+      <AuroraBackground />
       <SmoothScroll />
       <Cursor />
       <Hud />
