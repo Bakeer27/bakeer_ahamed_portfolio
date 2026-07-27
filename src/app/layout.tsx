@@ -104,7 +104,7 @@ const personSchema = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${bricolage.variable} ${geist.variable} ${geistMono.variable}`}>
-      <body className="grain min-h-screen bg-ink text-fg antialiased">
+      <body className="grain min-h-screen text-fg antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}

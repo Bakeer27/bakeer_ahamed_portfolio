@@ -22,7 +22,7 @@ export default function Page() {
       <Cursor />
       <Hud />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Impact />

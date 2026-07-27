@@ -113,40 +113,40 @@ export default function AuroraBackground() {
     <div
       ref={root}
       aria-hidden
-      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-ink"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-ink"
     >
       <div
         data-aurora="gold"
-        className="aurora-blob left-[-10%] top-[-15%] h-[70vmax] w-[70vmax]"
+        className="aurora-blob left-[-8%] top-[-12%] h-[72vmax] w-[72vmax]"
         style={{
           background:
-            "radial-gradient(circle at 50% 50%, rgba(217,165,74,0.20) 0%, rgba(217,165,74,0.07) 38%, transparent 68%)",
+            "radial-gradient(circle at 50% 50%, rgba(217,165,74,0.44) 0%, rgba(217,165,74,0.16) 34%, transparent 68%)",
         }}
       />
       <div
         data-aurora="violet"
-        className="aurora-blob right-[-18%] top-[8%] h-[78vmax] w-[78vmax]"
+        className="aurora-blob right-[-12%] top-[4%] h-[80vmax] w-[80vmax]"
         style={{
           background:
-            "radial-gradient(circle at 50% 50%, rgba(96,86,222,0.20) 0%, rgba(96,86,222,0.07) 40%, transparent 70%)",
+            "radial-gradient(circle at 50% 50%, rgba(109,96,246,0.42) 0%, rgba(109,96,246,0.15) 36%, transparent 70%)",
         }}
       />
       <div
         data-aurora="cyan"
-        className="aurora-blob bottom-[-25%] left-[18%] h-[66vmax] w-[66vmax]"
+        className="aurora-blob bottom-[-20%] left-[14%] h-[70vmax] w-[70vmax]"
         style={{
           background:
-            "radial-gradient(circle at 50% 50%, rgba(56,164,200,0.16) 0%, rgba(56,164,200,0.05) 42%, transparent 72%)",
+            "radial-gradient(circle at 50% 50%, rgba(56,178,220,0.32) 0%, rgba(56,178,220,0.11) 38%, transparent 72%)",
         }}
       />
 
       {/* rotating beam sweep */}
       <div
         data-aurora-beam
-        className="absolute left-1/2 top-1/2 h-[190vmax] w-[190vmax] -translate-x-1/2 -translate-y-1/2 opacity-[0.55] will-change-transform"
+        className="absolute left-1/2 top-1/2 h-[190vmax] w-[190vmax] -translate-x-1/2 -translate-y-1/2 will-change-transform"
         style={{
           background:
-            "conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(217,165,74,0.055) 24deg, transparent 62deg, transparent 180deg, rgba(96,86,222,0.05) 208deg, transparent 250deg, transparent 360deg)",
+            "conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(217,165,74,0.16) 24deg, transparent 64deg, transparent 180deg, rgba(109,96,246,0.14) 208deg, transparent 252deg, transparent 360deg)",
         }}
       />
 
@@ -158,16 +158,17 @@ export default function AuroraBackground() {
         className="invisible absolute -left-[22vmax] -top-[22vmax] h-[44vmax] w-[44vmax] will-change-transform"
         style={{
           background:
-            "radial-gradient(circle at 50% 50%, rgba(217,165,74,0.09) 0%, transparent 62%)",
+            "radial-gradient(circle at 50% 50%, rgba(217,165,74,0.20) 0%, transparent 62%)",
         }}
       />
 
-      {/* vignette keeps the centre readable and the edges deep */}
+      {/* Light vignette only — the glows live near the edges, so darkening
+          hard here would erase them. Enough to keep body copy readable. */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 90% 70% at 50% 45%, transparent 25%, rgba(7,11,20,0.72) 100%)",
+            "radial-gradient(ellipse 110% 85% at 50% 45%, transparent 55%, rgba(7,11,20,0.42) 100%)",
         }}
       />
     </div>

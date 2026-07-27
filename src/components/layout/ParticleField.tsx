@@ -70,7 +70,7 @@ export default function ParticleField() {
         else if (p.y > height + 20) p.y = -20;
       }
 
-      ctx.strokeStyle = "rgba(158,178,222,0.055)";
+      ctx.strokeStyle = "rgba(168,188,232,0.13)";
       ctx.lineWidth = 1;
       ctx.beginPath();
       for (let i = 0; i < particles.length; i++) {
@@ -87,7 +87,7 @@ export default function ParticleField() {
       }
       ctx.stroke();
 
-      ctx.fillStyle = "rgba(217,165,74,0.42)";
+      ctx.fillStyle = "rgba(226,180,96,0.72)";
       for (const p of particles) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);

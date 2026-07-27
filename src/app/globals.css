@@ -57,10 +57,12 @@
 
 html {
   scroll-behavior: auto;
+  /* base colour lives here so the fixed -z-10 aurora layer paints above it */
+  background: var(--ink);
 }
 
 body {
-  background: var(--ink);
+  background: transparent;
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 1rem;
